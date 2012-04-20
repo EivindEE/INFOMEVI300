@@ -1,0 +1,11 @@
+Eivind Eidheim Elseth (eel046)
+
+I want to write a thesis within semantic web technologies.
+I'm going to use literature from fields such as semantic web technologies and interaction design 
+One possible research question is "Can we help developers and business owners without knowledge of semantic technologies to produce and tag documents with semantic data?"
+To answer this question I want to see if I can create a tool that, by utilizing the lexitags system, empower developers and business owners to produce semantic content. 
+I want to perform a usability study to see if the tool can be successfully used by users without knowledge about semantic technologies. 
+I hope to show that it is possible to get naive users to create and deploy semantic content.
+This could be important as it would show that that proper tools could make creating semantic content available to non experts. This in turn would be important with regards to the proliferation of semantic encoding on the internet.
+
+I've talked to Csaba Veres about being the supervisor for my thesis.

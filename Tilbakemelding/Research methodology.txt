@@ -1,0 +1,50 @@
+John Fredrik    
+                - I like that you have a section on the limitations of case studies,
+                and I believe a case study is a suitable choice for your research area
+                - Maybe explain what ISO 15926 is.
+                - You mention Benbasat et al. [1987]s claim that IS research is 
+                    always one step behind, do you believe that's still true with the 
+                    newer focus on Design Research?
+                    
+                - You mention different data sources on page 11, 
+                    you might add which of these you believe you are going to use
+                
+                - Say more about which analytical methods you plan on using.
+                    
+                - One minor thing, you say on page 9( this might be a quote from Benbasat et al. [1987]) 
+                    that "case study research gives the possibility to answer ”how” and ”why” questions."
+                    I would just like to add that I feel that is a to strong a claim,
+                    I would modify it to "suggest answers" or "provide explanations".
+                    
+                    
+Lisa Halvorsen
+    There seems to be some citations missing on page 12, and 13
+        maybe you should check the bibtex file to make sure there aren't any errors
+    You mention in the "Design as an artefact" section that 
+            "To use information that is not directly related to the tourist domain will be a challenge"
+        Do you believe that this could be helped if we had a similar type of datasource that was truly open?
+    You could mention how the different methodologies from Nunamaker Jr et al. (1990) will be used.
+        Expand on the different activities
+        
+        
+        
+        
+        
+        
+Feedback
+    Skrive noe om kritikk av forskningsmetoden.
+    Kanskje et appendix med fordeler og ulemper(guidelines).
+    Evaluering: utdype hva som er kriteriene 
+    Utdype guidelines?
+    Mer litteratur, utvide fokus
+    Experimentation: 
+        Think aloud( Ta opp lyd)
+    Survey:
+        Reflektere på brukergruppe
+        Gå på turistkontoret?
+    Referere til spike(Se Lisa Halvorsen)
+    Theory Building
+        Reflektere over hva jeg har lært
+    
+    Mellom Litterature Review og Metode: Avsnitt med forskningsspørmål
+    

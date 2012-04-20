@@ -1,0 +1,7 @@
+SemiTag - APIs and keys
+
+Flickr - SemiTag
+Key:
+    27acc589ae2ea6f7ddc4ed84dbf46681
+Secret:
+    82292b5f4804c332

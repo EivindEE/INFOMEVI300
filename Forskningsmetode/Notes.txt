@@ -1,0 +1,8 @@
+Notater INFOMEVI
+    - Talk about possible image recognition or semantic lifting from spreadsheets (Won't need references for image recognition, it won't be implemented, only utilized though an API)
+    - Purpose of project ( Create an interface through which naive users can generate semantic data about businesses (and POI)).
+    - Methodology ( User testing? Proof of concept? User testing? Interviews?)
+            Hevner, A.R., S.T. March, J Park, and S. Ram (2004), "Design science in information systems research". 
+            
+    - There are two metrics of success for this project. One is that the system is easy and enjoyable enough that users will use it. The other is that the quality of the data is such that it can be used to construct ontologies, and to be shared proudly.
+        - These can correspond to the two dual goals of Design Science \citet{Sein2011}, namely to help build theory and to solve problems.
