@@ -4,30 +4,76 @@ The work with the thesis will begin in August 2012 and will be completed by May 
 The following tools and resources will be used to complete the project:
 
 \begin{description}
-    \item[Language]: Java \footnote{\url{http://www.java.com/en/}} 
+    \item[Language: ] Java \footnote{\url{http://www.java.com/en/}} 
     \\ Java is a high level object oriented language, with good options for creating web applications.
-    \item[Framework]: Spring \footnote{\url{http://www.springsource.org/}} 
+    \item[Framework: ] Spring \footnote{\url{http://www.springsource.org/}} 
     \\ Spring will be used as a development framework. Spring is a common framework in enterprise development, which helps in creating high level code.
-    \item[Integrated Development Environment]: The Springsource Tool Suite(STS)\footnote{\url{http://www.springsource.com/developer/sts}} 
+    \item[Integrated Development Environment: ] The Springsource Tool Suite(STS)\footnote{\url{http://www.springsource.com/developer/sts}} 
     \\ STS will be used as an Integrated Development Environment.
-    \item[Server]: Jetty\footnote{\url{http://www.eclipse.org/jetty/}} and Tomcat\footnote{\url{http://tomcat.apache.org/}} 
+    \item[Server: ] Jetty\footnote{\url{http://www.eclipse.org/jetty/}} and Tomcat\footnote{\url{http://tomcat.apache.org/}} 
     \\ Jetty is a light weight web server which will be used through development to test the web application. When the project is to be deployed for testing and use we will use a Tomcat server for additional robustness.
-    \item[Version Control]: Git\footnote{\url{http://git-scm.com/}} and GitHub\footnote{\url{https://github.com/}} 
+    \item[Version Control: ] Git\footnote{\url{http://git-scm.com/}} and GitHub\footnote{\url{https://github.com/}} 
     \\ Git is a open source distributed version control system. Using this will make it easier for others to see and continue the development of \theartefact after the thesis is completed. The git repository will also be hosted on GitHub. This will both give the project an external backup strategy, and make it easier to share the results when the project is over.
-    \item[Typesetting]: \LaTeX{}\footnote{\url{http://www.latex-project.org/}}
-    \\ The thesis will be written using \LaTeX{}. This will make it easier to separate the text from its formatting, keep proper references and citations, and if necessary change citation style.
+    \item[Typesetting: ] \LaTeX{}\footnote{\url{http://www.latex-project.org/}}
+    \\ The thesis will be written using \LaTeX{}. This will make it easier to separate the text from its formatting, keep proper references and citations, keep logical sections of the thesis separated, and if necessary change citation style.
+\end{description}
+
+I will also present the plan for when the different parts of the thesis are to be done. 
+It should be noted that while documentation and writing is not mentioned explicitly, it is an intended element of each step.
+The plan is presented both as tasks per month, and in a GANTT-chart( see figure \ref{fig:gantt} on page \pageref{fig:gantt}). 
+
+Tasks by semester:
+\begin{description}
+    \item[First semester: ] Initial data gathering, design requirements and coding
+    \item[Second semester: ] Coding, user testing and evaluation
+\end{description}
+
+Tasks by month:
+\begin{description}
+    \item[August: ] Technical spike and survey design
+    \item[September: ] Develop tag reader, initial data gathering and design requirements
+    \item[October: ] Coding sprints and prototype testing
+    \item[November: ] Coding sprints and prototype testing
+    \item[December: ] Coding sprints and prototype testing
+    \item[January: ] Coding sprints and prototype testing
+    \item[February: ] Code finalization and user testing
+    \item[March: ]  Evaluation and analysis of results
+    \item[April: ] Evaluation and documentation
+    \item[May: ] Finalization and proof reading
 \end{description}
 
 
-
-\begin{ganttchart}{12}
-  \gantttitle{2012,2013}{5,7} \\
-  \gantttitlelist{1,...,12}{1} \\
-  \ganttgroup{Group 1}{1}{7} \\
-  \ganttbar{Task 1}{1}{2} \\
-  \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-  \ganttmilestone{Milestone}{7} \ganttnewline
-  \ganttbar{Final Task}{8}{12}
-%  \ganttlink{elem2}{elem3}
-%  \ganttlink{elem3}{elem4}
-\end{ganttchart}
+\begin{landscape}
+    \begin{figure}
+        \begin{ganttchart}[x unit=.5cm, y unit chart=.5cm, hgrid=true,
+        vgrid={*3{red}, *4{green}, *4{blue},
+               *4{red}, *5{green}, *5{blue},
+               *4{red}, *4{green}, *5{blue}, *4{red}}]{42}
+            \gantttitle{2012}{20}  \gantttitle{2013}{22} \\
+            \gantttitle{August}{3}  \gantttitle{September}{4} \gantttitle{October}{4} 
+            \gantttitle{November}{4} \gantttitle{December}{5}  \gantttitle{January}{5} 
+             \gantttitle{February}{4} \gantttitle{March}{4} \gantttitle{April}{5} \gantttitle{May}{4} \\
+            \gantttitlelist{33,...,52}{1} \gantttitlelist{1,...,22}{1} \\
+%           \ganttgroup{Technical spike}{1}{2} \\ %\ganttgroup{} {5}{7} \\
+            \ganttbar{Technical spike}{1}{2} \\
+            \ganttbar{Survey design}{2}{3} \\
+            \ganttbar{Tag finder}{4}{4} \\
+            \ganttbar{Data gathering}{5}{5} \\
+            \ganttbar{Data analysis}{6}{6} \\
+            \ganttbar{Design Requirements}{7}{7} \\
+            \ganttbar{Coding sprints}{8}{18} \\
+            \ganttbar{Prototype testing}{11}{11} \ganttbar{}{15}{15} \ganttbar{}{18}{18} \\
+            \ganttbar{Christmas Holiday}{19}{20} \\
+            \ganttbar{Easter Holiday}{33}{33} \\
+%           \ganttlinkedbar{Task 2}{3}{7} \\ % \ganttnewline
+%           \ganttmilestone{Milestone}{7} \ganttnewline
+            \ganttbar{Evaluation}{29}{38} \\
+            \ganttbar{Evaluation}{29}{38} \\
+            \ganttbar{Finalization}{38}{42}
+%           \ganttlink{elem2}{elem3}
+%           \ganttlink{elem3}{elem4}
+        \end{ganttchart}
+        \label{fig:gantt}
+        \caption{GANTT-chart showing the progress plan for the thesis work.}
+    \end{figure}
+\end{landscape}
