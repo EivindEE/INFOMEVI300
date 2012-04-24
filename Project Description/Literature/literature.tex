@@ -1,3 +1,7 @@
+In this section we are going to go through some of the literature on how to create ontologies from non-semantic data.
+This process of semantic lifting will be central to the thesis. 
+The main part of this thesis will cover lifting semantic data from tags, but we will also cover semantic lifting from dynamic sources such as spreadsheets, which can allow the data store to have dynamic data which changes over time.
+
 \subsection{Ontology and folksonomy}
 One of the central concepts in semantic web technology is that of the ontology. 
 In philosophy Ontology is the branch dealing with the study of which things 'exists', and if it is possible to categorize these things. 
@@ -86,3 +90,17 @@ This tie would be obvious for most humans, and would most lightly be caught thro
 
 \citet{Passant2008} has also suggested a system where taggs are disambiguated by the user at input time. A difference between the systems is that Passant and Laublet suggested using URIs to online resources for disambiguation.
 
+\subsection{Dynamic datasources}
+The ability to add semantic data through tags is important for the success of this project. 
+But tags are a static source of information. 
+The folksonomy it self is dynamic, in that new tags can be added or old tags can be removed, but the tags them self are not the subject of change.
+We also want to look at the possibility to add datasources that can change over time.
+
+One way to do this is through the use of database wrappers such as D2RQ, SquirrelRDF, and OpenLink Virtuose which are described by \citet{Hebeler2009Chp9}. 
+\citet{Langegger2009a} also describes how one can gain similar access to spreadsheets through the use of the tool XLWrap-Server which they've developed.
+As \citet{Langegger2009a} points out, it is important for the success of the semantic web that one strives to gain access to legacy data.
+Many companies have information about such things as opening hours, menues, and prices stored in either relational data bases, or as spreadsheets.
+If one can gain access to these, by getting the URIs where they can be found, one can use these tools to generate mappings and endpoints
+which can be used to query the information within. 
+Since these are the same sources as the companies use, one can expect the data to be updated continuously and to get access to up to date information.
+The mappings however need to be created separately for each data source, so we need to look at if this can be done easily enough for novice users.
