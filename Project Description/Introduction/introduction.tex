@@ -1,3 +1,15 @@
+The internet is now an ingrained part of our everyday life, and the amount of content and services that are available through it is growing at an ever increasing rate. 
+For all this information to be of use to humans it is necessary to have some interface through which to access the parts of it that are relevant to us. 
+\citet{Shirky2007} tells of the early attempts to organize the web, using ontologies and hierarchies created by experts. 
+This soon got clunky as the number of documents increased, and this way of organizing information fell out of favor to be replaced by searching for information using keywords. 
+It is this phase of organizing information we are in now. 
+
+\citet{Berners-Lee2001} suggested that we could do better than this. 
+With searching as it works today users have to manually check the results from the search engine, and compare the results from several documents, following links as is necessary. 
+Instead of forcing users to go through this process, this new idea was to enrich the documents we put on the web with meta data that could be read and reasoned about by computers. 
+By doing this we could move the tedious task of siphoning though websites looking for relevant information from users over to specialized software agents that could collect information on the topic and return the answer to the user.
+
+
 If one wants to create an app to help people find interesting places and shops, good places to eat or drink coffee, and places where one can find lodging or exciting activities, 
 one either needs to build a data set containing this information or find some source that provides this information.
 
@@ -5,16 +17,21 @@ For small developers it isn't feasible to build and maintain data source of that
 Inn addition to this comes the fact that if every developer was to create his own data source there would be a whole lot of redundant data sets, and a lot of redundant work, since there would be a lot of overlap between the information in the different sets.
 
 There exists some data sources with this kind of information, Hotels.com\footnote{\url{http://www.hotels.com}} and VisitNorway and its subsites\footnote{\url{http://www.visitnorway.com}, \url{http://www.visitbergen.com/no/} etc. } are examples of sites that provide information about travel and tourism in Norway.
-But the information on these types of sites is proprietary, meaning that the site owns the information and might not allow others to reuse it in other applications. If it is available it is usually limited to the type of information relevant to the sites own needs, and available through an API( Application Programming Interface).
+But the information on these types of sites is proprietary, meaning that the site owns the information and might not allow others to reuse it in other applications. 
+If it is available it is usually limited to the type of information relevant to the sites own needs, and available through an API( Application Programming Interface).
 
 Since it is not feasible for small developers and smaller projects to build a extensive data source, and since it it presently hard to find an open data set containing this type of information,  one must believe that there are a lot interesting ideas that are never realized.
 
-To realize these projects we want to create a data source that is reusable, and open to developers. The data store will store information about points of interest(POI) using RDF(Resource Description Framework). 
+To realize these projects we want to create a semantic data source that is reusable, and open to developers.
+The data store will store information about points of interest(POI) using RDF(Resource Description Framework). 
 The use of RDF will promote reusability since using information from one RDF store in another context only requires the user to align the ontologies used for the different graphs. 
 
-Ontologies are also powerful in the way that they express the relationships between entities in the store. They store information in such a way that one can reason about the content of the store. 
-This means that one can say such things as "People that have released music on CDs are artists.". If one later wants to find all the artists, it is possible to find people who have released CDs, event if it isn't said explicitly in the data store that they are artists or some subclass of artist.
-The fact that ontologies users reason about the content of ontologies means that building ontologies is the domain of experts. Care needs to be taken to ensure than one maintains the truth in the knowledge base.
+Ontologies are also powerful in the way that they express the relationships between entities in the store. 
+They store information in such a way that one can reason about the content of the store. 
+This means that one can say such things as "People that have released music on CDs are artists". 
+If one later wants to find all the artists, it is possible to find people who have released CDs, event if it isn't said explicitly in the data store that they are artists or some subclass of artist.
+The fact that ontologies users reason about the content of ontologies means that building ontologies is the domain of experts. 
+Care needs to be taken to ensure than one maintains the truth in the knowledge base.
 
 The main difficulty we are going to face in creating this data source is finding a way for users to save information about a POI in a way that is both simple enough that they can do it without extensive training, a powerful enough that they don't feel restricted in what they can say.
 We need to have a way of generating light weight ontologies in such a way that they can be reasoned with, generalized, and reused. We also need an interface through which the users can interact to generate a knowledge base.
