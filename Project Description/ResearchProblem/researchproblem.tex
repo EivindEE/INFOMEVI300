@@ -4,13 +4,14 @@ Creating an ontology, and mapping date to an ontology is in most cases the type 
 
 The plan is to create a web site on which users can describe the POI they want to describe using tags.
 We will use lexitags to disambiguate the tags by mapping them to WordNet synsets or to concepts from DBpedia. 
-One can also imagine doing some basic parsing of the user input to see if it can have some other known meaning, like being a phone number, geo coordinate, or an organisation number.
+The system will also do some basic parsing of the user input to see if it can have some other known meaning, like being a phone number, geo coordinate, or an organisation number.
+We will also examine the possibility of accessing legacy data stores, which can be used to create dynamic data.
 
 This way, we hope it will be possible to both maintain the exact thing the user said, and to create light weight ontologies from these tags. 
-These ontologies are made possible from the WordNet and SUMO mappings. (!!!! INSERT SOME REFERENCES HERE !!!)
+The creation of these ontologies will be facilitated through the use of lexitags\citep{Veres2011}. 
+Using lexitags will make sure we have a mapping to WordNet, which again will make sure we have an ontology that is mapped to SUMO \citep{Niles2003}, and to Schema.org\footnote{\url{https://github.com/mhausenblas/schema-org-rdf}}.
 
-In this thesis we're going to attempt a different route. 
-The goal is to see if we can create an interface that will allow users without knowledge about semantic technologies to create semantic data about different points of interest in such a way that it can be shared freely with others.
+The goal of this thesis is to see if we can create an interface that will allow users without knowledge about semantic technologies to create semantic data about different points of interest in such a way that it can be shared freely with others.
 
 
 For my thesis I am going to develop a tool that will help gather information about businesses that might be of interest to tourists.
@@ -19,8 +20,9 @@ I will explore how much semantic data one can glean from user input, from users 
 
 To achieve this a tool that allows users to input information in natural language using the lexitags interface will be created, and the tags used to see if these tags can be used to extract extra data automatically through existing web services.
 
-(REWRITE) To answer this question I want to see if I can create a tool that, by utilizing the lexitags system, empower developers and business owners to produce semantic content. 
+To answer the research question I am going to create a tool that will users to produce semantic content. 
 
 A  usability study will be performed to see if the tool can be successfully used by users without knowledge about semantic technologies. 
-I hope to show that it is possible to get naive users to create and deploy semantic content.
-This could be important as it would show that that proper tools could make creating semantic content available to non experts. This in turn would be important with regards to the proliferation of semantic encoding on the internet.
+I will explore if this is a good way to get naive users to create and deploy semantic content.
+This could be important as it would show that that proper tools could make creating semantic content available to non experts. T
+his in turn would be important with regards to the proliferation of semantic encoding on the internet.
