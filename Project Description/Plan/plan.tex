@@ -45,7 +45,8 @@ Tasks by month:
 
 \begin{landscape}
     \begin{figure}
-        \begin{ganttchart}[x unit=.5cm, y unit chart=.5cm, hgrid=true,
+        \begin{ganttchart}[x unit=.5cm, y unit chart=.5cm, y unit title=.6cm,  
+        hgrid=true,
         vgrid={*3{red}, *4{green}, *4{blue},
                *4{red}, *5{green}, *5{blue},
                *4{red}, *4{green}, *5{blue}, *4{red}}]{42}
@@ -61,14 +62,17 @@ Tasks by month:
             \ganttbar{Data gathering}{5}{5} \\
             \ganttbar{Data analysis}{6}{6} \\
             \ganttbar{Design Requirements}{7}{7} \\
-            \ganttbar{Coding sprints}{8}{18} \\
-            \ganttbar{Prototype testing}{11}{11} \ganttbar{}{15}{15} \ganttbar{}{18}{18} \\
+            \ganttbar{Coding sprints}{8}{18} \ganttbar{}{21}{27} \\
+            \ganttbar{Prototype testing}{11}{11} \ganttbar{}{15}{15} \ganttbar{}{18}{18} \ganttbar{}{24}{24} \\
+
             \ganttbar{Christmas Holiday}{19}{20} \\
+
+            \ganttbar{User testing}{28}{29} \\
+            \ganttbar{Evaluation}{29}{32} \ganttbar{}{34}{37}\\
+            \ganttbar{Analysis}{29}{32} \\
+
             \ganttbar{Easter Holiday}{33}{33} \\
-%           \ganttlinkedbar{Task 2}{3}{7} \\ % \ganttnewline
-%           \ganttmilestone{Milestone}{7} \ganttnewline
-            \ganttbar{Evaluation}{29}{38} \\
-            \ganttbar{Evaluation}{29}{38} \\
+            \ganttbar{Documentation}{34}{37} \\
             \ganttbar{Finalization}{38}{42}
 %           \ganttlink{elem2}{elem3}
 %           \ganttlink{elem3}{elem4}
