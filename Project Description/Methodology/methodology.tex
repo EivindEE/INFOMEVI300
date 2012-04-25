@@ -86,10 +86,19 @@ users can express the things they want, and powerful enough to create RDF data o
 
 
 \subsection{Observation}
-We are also going to carry out some observation of how people use tags to describe POIs on the web, and what type of information people want when they are planning to travel to a new location.
+We are also going to carry out some observation of how people use tags to describe POIs on the web, 
+and what type of information people want when they are planning to travel to a new location.
+For both methods we are going to select a few POIs in Bergen, and see both what kind of information people want when they come to visit Bergen,
+and what information they think to add about the POIs.
+The POIs selected should be picked from different categories like stores, landmarks, restaurants, and hotels to capture a broad selection possible targets.
+We want to use commercial POIs as well as non-commercial, even though it might be more difficult to find user generated tags for these.
+The reason for this is that to create a successful data store for tourism, we also need information about commercial POIs, as these are of interest for travelers.
+Using the same POIs for both tests will make comparing the results easier. 
+Therefore we will stive to find commercial POIs that are taged.
 We will use two different methods to get this information.
 
 We will look at how people actually use tags to talk about and describe POIs on the internet now by looking at web sites that allows users to add tags. 
+To do this we will implement a simple web crawler that picks up tags about the selected POIs.
 Flickr\footnote{\url{http://www.flickr.com/}}, and Delicious\footnote{\url{http://delicious.com/}} are obvious places to start, 
 but more research could be done to find better or additional sources before the observation begins.
 Seeing that the internet is a virtual, not a physical, space, this type of observation is a close approximation of a field study, one of the methods suggested by \citet{Chen1990}.
@@ -109,15 +118,15 @@ then this will be an indication that setting a context for tagging might be enou
 If not then we might have to look into how we can convince users to tag differently when using our artefact.
 
 
-Another source of information will be attained using surveys, one of the observational methodologies mentioned by \citet{Chen1990}.
-This approach would consist of a survey sent to users with questions about what type of information they would want about different POIs if they were planning to visit an area.
-The survey should contain open questions as to get the whole width of possible information that is wanted.
-%% Experimentation was moved, read through and revise to remove inconsistencies 
-Both this and the experiment should use different classes of POIs like stores, landmarks, restaurants, and hotels to capture a broad selection of tag usage. 
-We should also look into the possibility of using the same POIs in the tag analysis from the web. 
-This might not be applicable for the commercial POIs, which might not be as interesting for current taggers. 
-But if we are able to find them, these would make it easier to compare results from between the different data sources.
-
+We will also use surveys, one of the observational methodologies mentioned by \citet{Chen1990}, to gather information about what type of information users want about POIs.
+The plan is to create a survey which mentions the POIs selected in Bergen, and which asks the subject what kind of information about these POIs they would want. 
+The survey should contain open ended questions as to get the whole width of possible information that is wanted.
+The survey will target tourists in Bergen. 
+These could be targeted by for example going to the tourist information agency, and asking the people who are there if they would like to participate.
+As with the usability studies, the sample size does not have to be large enough to enable us to make statistically significant statements,
+but they should be large enough to give us an insight into what kind of information tourists want about POIs. 
+A sample size of 10-20 subjects should be sufficient.
+ 
 Using the data from these three sources should give us ample information about how tags are used currently used to describe POIs, 
 how subjects tag POIs when they are aware that they are tagging in the context of helping travelers, 
 and what information people want when they think about traveling. 
@@ -126,8 +135,6 @@ The data gathered here will also be used to create the final success criteria fo
 The artefact will be successful if it can provide the types of data that users would want. 
 The activities in this part should be seen in light of \citet{Chen1990} as research activities. 
 Both the survey and looking at tag usage on the web are instances of observational studies.
-
-
 
 
 \subsection{System development}
